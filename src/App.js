@@ -13,7 +13,7 @@ function App() {
     const consultaApi = async () => {
       
       const apikey = 'ccb5d02e9aa74ce7a877e4bce5a4ae61';  
-      const url = `http://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=${apikey}`;
+      const url = `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=${apikey}`;
 
       const respuesta = await fetch(url);
       const noticias = await respuesta.json();
