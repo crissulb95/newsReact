@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Formulario.module.css';
 import useSelect from '../Hooks/useSelect';
+import PropTypes from 'prop-types';
 
 const Formulario = ({updateCategoria}) => {
 
-    const apikey = 'ccb5d02e9aa74ce7a877e4bce5a4ae61';
     
     const OPCIONES = [
         { value: 'general', label: 'General' },
@@ -45,5 +45,10 @@ const Formulario = ({updateCategoria}) => {
         </div>
      );
 }
- 
+
+
+Formulario.propTypes = {
+    updateCategoria: PropTypes.func.isRequired
+}
+
 export default Formulario;
